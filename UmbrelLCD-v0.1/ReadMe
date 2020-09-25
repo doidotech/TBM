@@ -4,7 +4,7 @@ sudo chmod +x lcdSetupScript.sh
 sudo ./lcdSetupScript.sh
 cd ..
 sudo cp -r UmbrelLCD-v0.1 /usr/bin
-cd /usr/bin/UmbrelLCDV1_0_1
+cd /usr/bin/UmbrelLCD-v0.1
 sudo chmod +x umbrelLCDServiceSetup.sh
 sudo ./umbrelLCDServiceSetup.sh
 sudo systemctl status UmbrelST7735LCD.service
