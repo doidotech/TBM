@@ -23,3 +23,4 @@ sudo ./umbrelLCDServiceSetup.sh
 
 sudo systemctl status UmbrelST7735LCD.service
 
+************************************************
