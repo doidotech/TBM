@@ -232,7 +232,7 @@ def draw_screen2():
     btc_current_block = get_block_count()
     #btc_current_block = '1,999,999'
     block_num_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 23)
-    draw_left_justified_text(disp.buffer, btc_current_block, get_inverted_x(24,23),52, 270, block_num_font, fill="#073044")
+    draw_left_justified_text(disp.buffer, btc_current_block, get_inverted_x(24,23),52, 270, block_num_font, fill=(255,255,255))
     # Display bitcoin icon
     btc_icon_xpos = 75
     btc_icon_ypos = 13
@@ -241,7 +241,7 @@ def draw_screen2():
     new_price = get_btc_price()
     #new_price = "12,672"
     price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 20)
-    draw_left_justified_text(disp.buffer, new_price, get_inverted_x((btc_icon_xpos+5),20),(btc_icon_ypos+37), 270, price_font, fill="#073044")
+    draw_left_justified_text(disp.buffer, new_price, get_inverted_x((btc_icon_xpos+5),20),(btc_icon_ypos+37), 270, price_font, fill=(255,255,255))
     # Draw the line
     line_upper_x_pos = get_inverted_x(16,36) # block icon x pos
     line_lower_x_pos = get_inverted_x(btc_icon_xpos,0)
