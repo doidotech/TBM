@@ -1,5 +1,5 @@
 git clone https://github.com/doidotech/TBM_Node.git
-cd TB_Node/UmbrelLCD-v0.1
+cd TBM_Node/UmbrelLCD-v0.1
 sudo chmod +x lcdSetupScript.sh
 sudo ./lcdSetupScript.sh
 cd ..
