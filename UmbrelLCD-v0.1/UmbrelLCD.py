@@ -202,7 +202,7 @@ def draw_screen1():
     # Display current bitcoin price
     new_price = get_btc_price()
     #new_price = '99,999'
-    price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 30)
+    price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 33)
     draw_left_justified_text(disp.buffer, new_price, get_inverted_x(14,35),52, 270, price_font, fill=(255,255,255))
     # Display umbrel icon
     block_x_pos = 75
@@ -211,7 +211,7 @@ def draw_screen1():
     # Display current bitcoin block
     btc_current_block = get_block_count()
     #btc_current_block = '9,999,999'
-    block_num_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 20)
+    block_num_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 29)
     draw_left_justified_text(disp.buffer, btc_current_block, get_inverted_x(block_x_pos+5,20),(block_y_pos+37), 270, block_num_font, fill=(255,255,255))
     # Draw the line
     line_upper_x_pos = get_inverted_x(16,37) # bitcoin icon x pos
@@ -231,7 +231,7 @@ def draw_screen2():
     # Display current bitcoin block
     btc_current_block = get_block_count()
     #btc_current_block = '1,999,999'
-    block_num_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 23)
+    block_num_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 29)
     draw_left_justified_text(disp.buffer, btc_current_block, get_inverted_x(24,23),52, 270, block_num_font, fill=(255,255,255))
     # Display bitcoin icon
     btc_icon_xpos = 75
@@ -240,7 +240,7 @@ def draw_screen2():
     # Display bitcoin price
     new_price = get_btc_price()
     #new_price = "12,672"
-    price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 20)
+    price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 33)
     draw_left_justified_text(disp.buffer, new_price, get_inverted_x((btc_icon_xpos+5),20),(btc_icon_ypos+37), 270, price_font, fill=(255,255,255))
     # Draw the line
     line_upper_x_pos = get_inverted_x(16,36) # block icon x pos
