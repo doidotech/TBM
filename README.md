@@ -5,7 +5,7 @@ Repository contains LCD setup scripts for nodes
 
 git clone https://github.com/doidotech/TBM.git
 
-cd TBM_Node/UmbrelLCD-v0.1
+cd TBM/UmbrelLCD-v0.1
 
 sudo chmod +x lcdSetupScript.sh
 
