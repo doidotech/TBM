@@ -1,4 +1,4 @@
-# TBM_Node
+# TBM
 Repository contains LCD setup scripts for nodes
 
 --LCD SETUP for Umbrel Node --
