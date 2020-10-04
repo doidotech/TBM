@@ -3,7 +3,7 @@ Repository contains LCD setup scripts for nodes
 
 --LCD SETUP for Umbrel Node --
 
-git clone https://github.com/doidotech/TBM_Node.git
+git clone https://github.com/doidotech/TBM.git
 
 cd TBM_Node/UmbrelLCD-v0.1
 
