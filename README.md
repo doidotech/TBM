@@ -1,4 +1,4 @@
-# TBM_Node
+# The Bitcoin Machine
 Repository contains LCD setup scripts for nodes
 
 
