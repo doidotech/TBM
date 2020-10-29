@@ -2,7 +2,7 @@
 Repository contains LCD setup scripts for nodes
 
 
-git clone https://github.com/doidotech/TBM_Node.git
+git clone https://github.com/doidotech/TBM.git
 
 cd TBM/TBMLCD-v0.1
 
