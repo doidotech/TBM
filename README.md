@@ -1,5 +1,7 @@
 # The Bitcoin Machine
-Repository contains LCD setup scripts for nodes
+Repository contains LCD setup scripts for your Bitcoin Nodes
+
+SSH into your Bitcoin Node and follow the steps below,
 
 
 git clone https://github.com/doidotech/TBM.git
