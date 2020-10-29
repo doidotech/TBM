@@ -5,7 +5,7 @@
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
-# This script displays two screens for the umbrel project
+# This script displays two screens for the TBM LCD project
 #-------------------------------------------------------------------------------
 
 from PIL import Image
@@ -204,7 +204,7 @@ def draw_screen1():
     #new_price = '99,999'
     price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 33)
     draw_left_justified_text(disp.buffer, new_price, get_inverted_x(14,35),52, 270, price_font, fill=(255,255,255))
-    # Display umbrel icon
+    # Display TBM icon
     block_x_pos = 75
     block_y_pos = 13
     display_icon(disp.buffer, images_path+'Block_Icon.png', (get_inverted_x(block_x_pos,30),block_y_pos),30)
@@ -226,7 +226,7 @@ def draw_screen1():
 def draw_screen2():
     # Display background first
     display_background_image('Screen2@288x.png')
-    # Display umbrel icon
+    # Display TBM icon
     display_icon(disp.buffer, images_path+'Block_Icon.png', (get_inverted_x(16,36),10),36)
     # Display current bitcoin block
     btc_current_block = get_block_count()
@@ -271,9 +271,9 @@ def draw_centered_text(image, text, xposition, angle, font, fill=(255,255,255)):
     image.paste(rotated, (xCordinate,yCordinate), rotated)
         
 # Start the display of images now.
-print('Running Umbrel LCD script Version 1.0.4')
-#Display umbrel logo first for 60 seconds
-display_background_image('umbrel_logo.jpg')
+print('Running TBM LCD script Version 1.0.4')
+#Display TBM logo first for 60 seconds
+display_background_image('logo.jpg')
 disp.display()
 time.sleep(60)
 
