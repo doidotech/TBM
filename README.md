@@ -46,7 +46,7 @@ sudo ./TBMLCDServiceSetup.sh
 ```sh
 sudo systemctl status TBMST7735LCD.service
 ```
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/8.png)
+![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/7.png)
 By now the LCD is UP and Running with Bitcoin Dashboard.
 
 ![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/9.jpg)
