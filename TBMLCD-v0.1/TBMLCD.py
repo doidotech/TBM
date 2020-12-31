@@ -70,7 +70,7 @@ helveticaneue_fonts_path = filePath+'/helveticaneue/'
 def get_inverted_x(currentX, objectSize):
     invertedX = WIDTH - (currentX + objectSize)
     return invertedX
-    
+
 # Define a function to draw the lcd background image.
 def display_background_image(image_name):
     # Load an image.
@@ -86,7 +86,7 @@ def display_background_image(image_name):
     rotated = picimage.rotate(270, expand=1)
     # Paste the image into the screen buffer
     image.paste(rotated, position, rotated)
-    
+
 # Define a function to draw an icon.
 def display_icon(image, image_path, position,icon_size):
     # Load an image.
@@ -99,8 +99,7 @@ def display_icon(image, image_path, position,icon_size):
     rotated = picimage.rotate(270, expand=1)
     # Paste the image into the screen buffer
     image.paste(rotated, position, rotated)
-    
-    
+
 # Define a function to create left justified text.
 def draw_left_justified_text(image, text, xposition, yPosition, angle, font, fill=(255,255,255)):
     # Get rendered font width and height.
@@ -118,9 +117,9 @@ def draw_left_justified_text(image, text, xposition, yPosition, angle, font, fil
     xCordinate = xposition
     #yCordinate = int((H-width)-yPosition)
     yCordinate = yPosition
-    
+
     image.paste(rotated, (xCordinate,yCordinate), rotated)
-    
+
 # Define a function to create right justified text.
 def draw_right_justified_text(image, text, xposition, yPosition, angle, font, fill=(255,255,255)):
     # Get rendered font width and height.
@@ -138,9 +137,9 @@ def draw_right_justified_text(image, text, xposition, yPosition, angle, font, fi
     xCordinate = xposition
     yCordinate = int((H-width)-yPosition)
     #yCordinate = yPosition
-    
+
     image.paste(rotated, (xCordinate,yCordinate), rotated)
-    
+ 
 # Define a function to display temperature
 def display_temperature(screenType):
     # Measure temperature
@@ -177,22 +176,24 @@ def get_block_count():
     except:
         print("Error while getting current block")
         return ""
-    
+
 # Define a function get bitcoin price
 def get_btc_price():
     price_font = ImageFont.truetype(helveticaneue_fonts_path+"HelveticaNeuBold.ttf", 35)
     try:
-        url = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=INR,USD"
+        url="https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=USD"
         currentPrice = urlreq.urlopen(url, context=ssl.create_default_context(cafile=certifi.where())).read()
         price_dict = json.loads(currentPrice)
-        price = int(price_dict['USD'])
+        print(price_dict['bitcoin']) 
+        price_dict = price_dict['bitcoin']
+        price = int(price_dict['usd'])
         #price='99,999'
         #print("$" + price)
         return place_value(price)
     except:
         print("Error while getting price")
         return ""
-    
+
 # Define a function to draw Screen1
 def draw_screen1():
     # Display background first
@@ -218,10 +219,10 @@ def draw_screen1():
     line_lower_x_pos = get_inverted_x(block_x_pos,0)
     line_y_pos = 28 #(10 left margin, 18 radius of bitcoin icon)
     shape = [(line_upper_x_pos, line_y_pos), (line_lower_x_pos, line_y_pos)]
-    draw.line(shape, fill ="#969994", width = 2) 
+    draw.line(shape, fill ="#969994", width = 2)
     # Display temperature
     display_temperature(1)
-    
+
 # Define a function to draw Screen2
 def draw_screen2():
     # Display background first
@@ -250,7 +251,7 @@ def draw_screen2():
     draw.line(shape, fill ="#969994", width = 2)
     # Display temperature
     display_temperature(2)
-    
+
 # Define a function to create centered justified text.
 def draw_centered_text(image, text, xposition, angle, font, fill=(255,255,255)):
     # Get rendered font width and height.
@@ -267,9 +268,9 @@ def draw_centered_text(image, text, xposition, angle, font, fill=(255,255,255)):
     # Paste the text into the image, using it as a mask for transparency.
     xCordinate = xposition
     yCordinate = int((H-width)/2)
-    
+
     image.paste(rotated, (xCordinate,yCordinate), rotated)
-        
+
 # Start the display of images now.
 print('Running TBM LCD script Version 1.0.4')
 #Display TBM logo first for 60 seconds
@@ -279,17 +280,17 @@ time.sleep(60)
 
 
 while True:
-    try:  
-        # First screen 45s
+    try:
+        # First screen 60s
         disp.clear((255, 255, 255))
         draw_screen1()
         disp.display()
-        time.sleep(45)
-        # Second screen 15s
+        time.sleep(60)
+        # Second screen 60s
         disp.clear((255, 255, 255))
         draw_screen2()
         disp.display()
-        time.sleep(15)
+        time.sleep(60)
     except:
         print("error")
 
