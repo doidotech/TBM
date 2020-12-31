@@ -1,6 +1,8 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-#   Author   : Walter-DOIDO Technologies
+#   Copyright (c) 2020 DOIDO Technologies
+#
+#   Author   : Walter
 #   Version  : 1.0.0
 #   Location : github
 #-------------------------------------------------------------------------------
@@ -42,6 +44,6 @@ sudo sed -i 's/dtparam=spi=off/dtparam=spi=on/g' /boot/config.txt
 sudo sed -i 's/#dtparam=spi=on/dtparam=spi=on/g' /boot/config.txt
 
 echo " "
-echo "Setup complete!"
+echo "Done installing ST7735 LCD library."
 echo " "
 
