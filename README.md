@@ -28,7 +28,9 @@ sudo chmod +x lcdServiceSelector.sh
 ```sh
 sudo ./lcdServiceSelector.sh
 ```
+Enter a number to select the Node for which you are installing LCD Drivers.
 
+Once setup complete, please reboot the machine from your node dashboard.
 
 By now the LCD is UP and Running with Bitcoin Dashboard.
 
