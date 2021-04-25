@@ -7,30 +7,30 @@ We all have a habit of checking Bitcoin Price now and then. There are some who m
 
 ## Setup the Machine Face (LCD)
 ssh into the bitcoin node using Putty or iTerm2
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/1.png)
+
 
 Clone the TBM repository
 ```sh
 git clone https://github.com/doidotech/TBM.git
 ```
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/2.png)
+
 
 ```sh
 cd TBM/TBMLCD-v0.2
 ```
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/3.png)
+
 
 ```sh
 sudo chmod +x lcdServiceSelector.sh
 ```
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/4.png)
+
 
 ```sh
 sudo ./lcdServiceSelector.sh
 ```
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/5.png)
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/6.png)
-![N|Solid](https://github.com/doidotech/TBM/raw/master/Images/7.png)
+Enter a number to select the Node for which you are installing LCD Drivers.
+
+Once setup complete, please reboot the machine from your node dashboard.
 
 By now the LCD is UP and Running with Bitcoin Dashboard.
 
