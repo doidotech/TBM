@@ -16,7 +16,7 @@ git clone https://github.com/doidotech/TBM.git
 
 
 ```sh
-cd TBM/TBMLCD-v0.2
+cd TBM/TBMLCD-v0.3
 ```
 
 
