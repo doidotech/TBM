@@ -481,9 +481,9 @@ def draw_screen4():
     
 
 # Start the display of images now.
-print('Running Umbrel LCD script Version 1.0.10')
+print('Running MyNode LCD script Version 1.0.10')
 #Display umbrel logo first for 60 seconds
-display_background_image('umbrel_logo.jpg')
+display_background_image('Mynode_Bootscreen.png')
 disp.display()
 time.sleep(15)
 
