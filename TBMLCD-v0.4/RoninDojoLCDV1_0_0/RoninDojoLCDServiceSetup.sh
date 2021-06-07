@@ -17,10 +17,10 @@ echo "                                    SCREEN SELECTION MENU"
 echo "=============================================================================================="
 echo
 echo "Available screens:"
-echo "                    Screen 1: The Bitcoin price and sats/unit of currency."
-echo "                    Screen 2: The next Bitcoin block information."
-echo "                    Screen 3: The current Bitcoin block height."
-echo "                    Screen 4: The current date and time."
+echo "                    Screen 1: Bitcoin Price and sats/currency."
+echo "                    Screen 2: Mempool information."
+echo "                    Screen 3: Current Bitcoin Block height."
+echo "                    Screen 4: Current Date and Time."
 echo
 echo "Please answer by typing yes or no then press the enter key."
 echo
@@ -32,7 +32,7 @@ gettingUserChoice=true
 # Loop until user enters a valid choice
 while $gettingUserChoice 
 	do
-    	read -p "Would you like screen 1 to be shown?  " userAnswer
+    	read -p "Would you like Bitcoin price and sats/currency to be shown as screen 1" userAnswer
         # Convert to uppercase
 		userAnswer=${userAnswer^^}
 
@@ -56,7 +56,7 @@ gettingUserChoice=true
 # Loop until user enters a valid choice
 while $gettingUserChoice 
 	do
-    	read -p "Would you like screen 2 to be shown?  " userAnswer
+    	read -p "Would you like Mempool information to be shown as screen 2?  " userAnswer
         # Convert to uppercase
 		userAnswer=${userAnswer^^}
 
@@ -80,7 +80,7 @@ gettingUserChoice=true
 # Loop until user enters a valid choice
 while $gettingUserChoice 
 	do
-    	read -p "Would you like screen 3 to be shown?  " userAnswer
+    	read -p "Would you like Current Bitcoin Block height to be shown as screen 3?  " userAnswer
         # Convert to uppercase
 		userAnswer=${userAnswer^^}
 
@@ -104,7 +104,7 @@ gettingUserChoice=true
 # Loop until user enters a valid choice
 while $gettingUserChoice 
 	do
-    	read -p "Would you like screen 4 to be shown?  " userAnswer
+    	read -p "Would you like Current Date and Time to be shown as screen 4?  " userAnswer
         # Convert to uppercase
 		userAnswer=${userAnswer^^}
 

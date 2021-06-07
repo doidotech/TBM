@@ -25,7 +25,7 @@ gettingUserChoice=true
 # Loop until user enters a valid choice
 while $gettingUserChoice 
 	do
-    	read -p "Would you like Bitcoin price and sats/currency to be shown as screen1?  " userAnswer
+    	read -p "Would you like Bitcoin price and sats/currency to be shown as screen 1?  " userAnswer
         # Convert to uppercase
 		userAnswer=${userAnswer^^}
 
