@@ -1,0 +1,8 @@
+Whats New in version 0.5
+========================
++ A newer version of ST7735 library
++ All API requests through Tor
++ Mempool infö from your node if mempool app is installed
++ Bitcoin network information screen
++ Payment channels information screen
++ Disk storage information screen
